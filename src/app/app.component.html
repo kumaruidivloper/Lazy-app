@@ -1,6 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav>
-  <a routerLink="home">Home Component</a>
-  <a routerLink="lazy">Lazy Module</a>
-</nav>
+<ul>
+  <li>
+    <a routerLinkActive="active-link"
+       routerLink="/home">
+      HOME
+    </a>
+  </li>
+  
+  <li>
+    <a routerLinkActive="active-link"
+       routerLink="/news">
+      NEWS
+    </a>
+  </li>
+  
+</ul>
+<br>
 <router-outlet></router-outlet>

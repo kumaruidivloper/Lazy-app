@@ -1,6 +1,9 @@
 # LazyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+ 
+## Refrence Link For This Branch
+https://www.callibrity.com/blog/angular-2-route-resolves
 
 ## App Setup
 Step1: ng new [app-name] --style=scss --routing
