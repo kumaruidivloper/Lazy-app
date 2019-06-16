@@ -11,6 +11,31 @@ Step3:
   "node_modules/bootstrap/dist/css/bootstrap.min.css"
 ],
 
+## Create Home Component
+Step1: ng g c home --dryRun [show the test files structure]
+
+## Creating the Lazy Module
+Step1: ng generate module lazy --routing
+
+## Creating lazy component
+Step1: cd src/app/lazy
+ng generate component sobre
+
+## lazy-routing.module.ts [add code]
+Step1: import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { SobreComponent } from './sobre/sobre.component';
+
+const routes: Routes = [
+  {path: '', component: SobreComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class LazyRoutingModule { }
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
